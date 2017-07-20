@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<meta charset="UTF-8">-->
+		<!--优先使用IE最新版本和Chrome-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+		<!--设置苹果工具栏颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content='black' />
+		<link rel="stylesheet" type="text/css" href="font_图标/iconfont.css" />
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			html,body{
+				background: #F0F0F0;
+			}
+			header {
+				width: 100%;
+				height: 3rem;
+				display: flex;
+				justify-content: space-around;
+				line-height: 3rem;
+				font-size: 1.5rem;
+				background: white;
+			}
+			
+			header div:nth-of-type(1) {
+				margin-left: -3rem;
+			}
+			header div:nth-of-type(3) {
+				margin-right: -3rem;
+			}
+			.zh{
+				width: 100%;
+				height: 4rem;
+				background: white;
+				margin-top:1rem;
+				display: flex;
+				justify-content: space-between;
+				text-align: center;
+			}
+			.zh div{
+				width: 15%;
+				height: 100%;
+				line-height: 4rem;
+				border-right: 1px solid #DDDDDD;
+			}
+			.zh input{
+				width: 85%;
+				height: 100%;
+				border:none;
+				text-indent:0.6rem;
+				font-size: 1rem;
+			}
+			
+			.mm{
+				width: 100%;
+				height: 4rem;
+				background: white;
+				margin-top:1rem;
+				display: flex;
+				justify-content: space-between;
+				text-align: center;
+			}
+			.mm div{
+				width: 15%;
+				height: 100%;
+				line-height: 4rem;
+				border-right: 1px solid #DDDDDD;
+			}
+			.mm input{
+				width: 85%;
+				height: 100%;
+				border:none;
+				text-indent:0.6rem;
+				font-size: 1rem;
+			}
+			
+			.yzm{
+				width: 100%;
+				height: 4rem;
+				background: white;
+				margin-top:1rem;
+				display: flex;
+				justify-content: space-between;
+				text-align: center;
+			}
+			.yzm div:nth-of-type(1){
+				width: 15%;
+				height: 100%;
+				line-height: 4rem;
+				text-align: center;
+				border-right: 1px solid #DDDDDD;
+			}
+			.yzm div:nth-of-type(2){
+				width: 25%;
+				height: 100%;
+				line-height: 4rem;
+				text-align: center;
+				color: salmon;
+				font-weight: 900;
+			}
+			.yzm input{
+				width: 60%;
+				height: 100%;
+				border:none;
+				text-indent:0.6rem;
+				font-size: 1rem;
+			}
+			
+			button{
+				width: 96%;
+				height: 3rem;
+				border: none;
+				background: salmon;
+				color: white;
+				margin-top:1rem ;
+				border-radius: 10px;
+				margin-left: 0.5rem;
+				font-size: 1.2rem;
+			}
+			.dl{
+				width: 96%;
+				height: 4rem;
+				display: flex;
+				margin: 0 auto;
+				justify-content: space-between;
+				margin-top: 0.5rem;
+			}
+			.dl div:nth-of-type(1){
+				width: 25%;
+				border-bottom: 1px solid #CCCCCC;
+			}
+			.dl div:nth-of-type(2){
+				width: 46%;
+				text-align: center;
+				margin-top: 3rem;
+			}
+			.dl div:nth-of-type(3){
+				width: 25%;			
+				border-bottom: 1px solid #CCCCCC;
+			}
+			.dl div:nth-of-type(3) a{
+				display: block;
+				float: right;
+				
+			}
+			a{
+				color: #CCCCCC;
+				text-decoration: none;
+			}
+			footer {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: white; }
+  footer div {
+    text-align: center;
+    font-size: 0.8rem; }
+    footer div img {
+      margin-top: 0.1rem; }
+		</style>
+	</head>
+
+	<body>
+		<header>
+			<div class="icon iconfont icon-fanhui1"></div>
+			<div>登录</div>
+			<div class="icon iconfont icon-saoyisao"></div>
+		</header>
+		<div class="zh">
+			<div>账号</div>
+			<input type="text" placeholder=" 请输入用户名/邮箱 /手机号">
+		</div>
+
+		<div class="mm">
+			<div>密码</div>
+			<input type="text" placeholder=" 请输入登录密码">
+		</div>
+
+		<div class="yzm">
+			<div>验证码</div>
+			<input type="text" placeholder=" 请输入验证码">
+			<div>676N</div>
+		</div>
+
+		<button>确认登录</button>
+		
+		<div class="dl">
+			<div><a href="#">忘记密码？</a></div>
+			<div>使用合作网站账号登录</div>
+			<div><a href="#">立即注册</a></div>
+		</div>
+		<footer>
+			<div><img src="img/img_45.png"><p>首页</p></div>
+			<div><img src="img/img_47.png"><p>商城返利</p></div>
+			<div><img src="img/img_49.png"><p>优惠爆料</p></div>
+			<div><img src="img/img_51.png"><p>超级返利</p></div>
+			<div><img src="img/img_53.png"><p>我的</p></div>
+		</footer>
+	</body>
+
+</html>
